@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Open+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Sans:wght@700&family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+html {
+	overflow-y: scroll;
+	overflow-x: hidden;
+  } 
+
+body {
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+	background-color: #f7f7f7;
+}
+
+div { 
+	padding-top: 100px;
+	margin:0 auto;
+	width: 1080px;
+	background-color: #ffffff; 
+	padding-bottom: 20px;
+}
+
+h1 {
+	margin: 0;
+	font-family: Montserrat Alternates;
+	text-align: center;
+	font-size: 65px;
+	font-weight: 700;
+	color: #181818;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+h2 {
+	margin-top: 60px;
+	margin-bottom: 50px;
+	margin-right: 100px;
+	margin-left: 100px;
+	padding: 15px 15px 15px 15px;
+	font-family: Merriweather;
+	font-weight: 100;
+	color: #181818;
+	font-size: 23px;
+	line-height: 35px;
+}
+
+h3 {
+	font-family: Montserrat Alternates;
+	text-align: center;
+	color: #181818;
+	font-weight: 600;
+	font-size: 50px;
+	margin-top: 70px;
+}
+p {
+	text-align: center;
+	color: #ffffff;
+	font-family: Merriweather;
+	font-size: 70px;
+	padding-bottom: 50px;
+	padding-top: 40px;
+	background-color: black;
+	margin: 0px 50px 0px 50px;
+}
+
+img {
+	width: 100%;
+}
+
+.header {
+	padding: 0;
+	background-color: #181818;
+	height: 150px;
+}
+
+.img {
+	background-color: #181818;
+    padding: 0;
+}
+
+.w {
+	padding: 0;
+	margin: 0;
+	margin: 00px auto 00px;
+    display: block;
+}
