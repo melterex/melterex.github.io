@@ -1,88 +1,289 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Open+Sans&family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Sans:wght@700&family=Raleway:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ponomar&family=Roboto:wght@300;400;500&family=Charis+SIL:wght@400;700&display=swap');
 
-html {
-	overflow-y: scroll;
-	overflow-x: hidden;
-  } 
-
-body {
+* {
     margin: 0;
     padding: 0;
-    perspective: 1px;
-	background-color: #f7f7f7;
+    box-sizing: border-box;
 }
 
-div { 
-	padding-top: 100px;
-	margin:0 auto;
-	width: 1080px;
-	background-color: #ffffff; 
-	padding-bottom: 20px;
+html {
+    scroll-behavior: smooth;
 }
 
-h1 {
-	margin: 0;
-	font-family: Montserrat Alternates;
-	text-align: center;
-	font-size: 65px;
-	font-weight: 700;
-	color: #181818;
-	margin-left: 5%;
-	margin-right: 5%;
+body {
+    font-family: 'Charis SIL', serif;
+    background: #ffffff;
+    margin: 0;
+    position: relative;
+    overflow-x: hidden;
 }
 
-h2 {
-	margin-top: 60px;
-	margin-bottom: 50px;
-	margin-right: 100px;
-	margin-left: 100px;
-	padding: 15px 15px 15px 15px;
-	font-family: Merriweather;
-	font-weight: 100;
-	color: #181818;
-	font-size: 25px;
-	line-height: 45px;
+/* Стили для полноэкранных секций */
+.screen {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
-h3 {
-	font-family: Montserrat Alternates;
-	text-align: center;
-	color: #181818;
-	font-weight: 600;
-	font-size: 50px;
-	margin-top: 70px;
-}
-p {
-	text-align: center;
-	color: #ffffff;
-	font-family: Merriweather;
-	font-size: 70px;
-	padding-bottom: 50px;
-	padding-top: 40px;
-	background-color: black;
-	margin: 0px 50px 0px 50px;
+.container {
+    text-align: center;
+    padding: 40px;
+    max-width: 90%;
+    position: relative;
+    z-index: 2;
 }
 
-img {
-	width: 100%;
+/* Картинка закреплена в левом нижнем углу */
+.corner-image {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    transform: rotate(-10deg);
+    width: 300px;
+    height: auto;
+    opacity: 0.9;
+    z-index: 1;
+    filter: brightness(1.1) contrast(1.1);
+    transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-.header {
-	padding: 0;
-	background-color: #181818;
-	height: 150px;
+/* Анимация ухода влево за пределы экрана */
+body.scrolled .corner-image {
+    transform: translateX(-100%) rotate(-10deg);
+    opacity: 0;
 }
 
-.img {
-	background-color: #181818;
-    padding: 0;
+/* Первый экран */
+.first-screen {
+    background: #ffffff;
 }
 
-.w {
-	padding: 0;
-	margin: 0;
-	margin: 00px auto 00px;
+.main-title {
+    font-family: 'Ponomar', serif;
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    color: #535353;
+    margin-bottom: 25px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+}
+
+.russia {
     display: block;
+    margin-top: 10px;
+}
+
+.subtitle {
+    font-family: 'Charis SIL', serif;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    color: #666666;
+    border-top: 2px solid #666666;
+    padding-top: 15px;
+    display: inline-block;
+    font-weight: 400;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Второй экран */
+.second-screen {
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), 
+                url('https://avatars.mds.yandex.net/i?id=e43fe8fc26bdcc626319ef0486613ba8_l-10703682-images-thumbs&n=13');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    align-items: flex-start;
+    padding-top: 60px;
+}
+
+/* Третий экран */
+.third-screen {
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), 
+                url('https://avatars.dzeninfra.ru/get-zen_doc/4759087/pub_6363cc7d705bf4071d090dbf_6363cdd1a89f696ed2968f4f/scale_1200');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    align-items: flex-start;
+    padding-top: 60px;
+}
+
+.second-screen .container,
+.third-screen .container {
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+.section-title {
+    font-family: 'Ponomar', serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 0;
+    background-color: rgba(83, 83, 83, 0.8);
+    padding: 20px 40px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Блоки для каждого абзаца */
+.text-block {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 25px 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.text-block:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.text-block p {
+    font-family: 'Charis SIL', serif;
+    font-size: 1.3rem;
+    line-height: 1.7;
+    color: #333;
+    font-weight: 400;
+    text-align: justify;
+    margin: 0;
+}
+
+.text-block:last-child {
+    margin-bottom: 0;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    
+    .main-title,
+    .section-title {
+        letter-spacing: 1px;
+    }
+    
+    .corner-image {
+        width: 220px;
+        left: 15px;
+        bottom: 15px;
+        opacity: 0.8;
+        transform: rotate(-8deg);
+    }
+    
+    body.scrolled .corner-image {
+        transform: translateX(-100%) rotate(-8deg);
+    }
+    
+    .text-block {
+        padding: 20px 25px;
+        margin-bottom: 15px;
+    }
+    
+    .text-block p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+    
+    .section-title {
+        padding: 15px 30px;
+        font-size: clamp(2rem, 4vw, 3rem);
+    }
+    
+    .second-screen,
+    .third-screen {
+        padding-top: 40px;
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title,
+    .section-title {
+        font-size: 2.2rem;
+        letter-spacing: 0.5px;
+    }
+    
+    .corner-image {
+        width: 180px;
+        left: 10px;
+        bottom: 10px;
+        opacity: 0.7;
+        transform: rotate(-6deg);
+    }
+    
+    body.scrolled .corner-image {
+        transform: translateX(-100%) rotate(-6deg);
+    }
+    
+    .second-screen,
+    .third-screen {
+        padding-top: 30px;
+    }
+    
+    .text-block {
+        padding: 15px 20px;
+        margin-bottom: 12px;
+    }
+    
+    .text-block p {
+        font-size: 1.1rem;
+        text-align: left;
+    }
+    
+    .section-title {
+        margin-bottom: 20px;
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 360px) {
+    .corner-image {
+        width: 150px;
+        left: 8px;
+        bottom: 8px;
+        opacity: 0.6;
+        transform: rotate(-5deg);
+    }
+    
+    body.scrolled .corner-image {
+        transform: translateX(-100%) rotate(-5deg);
+    }
+    
+    .second-screen,
+    .third-screen {
+        padding-top: 20px;
+    }
+    
+    .text-block {
+        padding: 12px 15px;
+        margin-bottom: 10px;
+    }
+    
+    .text-block p {
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        padding: 10px 20px;
+    }
 }
