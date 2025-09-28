@@ -73,6 +73,18 @@ body.scrolled .corner-image {
     z-index: 2;
 }
 
+.top-corner-image {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    width: 120px;
+    height: auto;
+    opacity: 0.9;
+    z-index: 1;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+
 .russia {
     display: block;
     margin-top: 10px;
@@ -106,7 +118,7 @@ body.scrolled .corner-image {
 /* Третий экран */
 .third-screen {
     background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), 
-                url('https://avatars.dzeninfra.ru/get-zen_doc/4759087/pub_6363cc7d705bf4071d090dbf_6363cdd1a89f696ed2968f4f/scale_1200');
+                url('https://img-fotki.yandex.ru/get/368408/20764874.49/0_cedc3_211d754e_orig');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -138,7 +150,7 @@ body.scrolled .corner-image {
 
 /* Шестой экран */
 .sixth-screen {
-    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), 
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), 
                 url('https://i.postimg.cc/vTDGgxfC/IMG-9584.jpg');
     background-size: cover;
     background-position: center;
@@ -149,7 +161,7 @@ body.scrolled .corner-image {
 
 /* Седьмой экран */
 .seventh-screen {
-    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), 
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), 
                 url('https://cont.ws/uploads/pic/2022/10/Челябинская%20область%20ст.%20Вязовая.jpg');
     background-size: cover;
     background-position: center;
@@ -160,7 +172,7 @@ body.scrolled .corner-image {
 
 /* Восьмой экран */
 .eighth-screen {
-    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), 
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), 
                 url('https://wichitalinemanwasasongionceheard.com/wp-content/uploads/2025/06/nuclear-bomb-image.jpg');
     background-size: cover;
     background-position: center;
@@ -171,8 +183,8 @@ body.scrolled .corner-image {
 
 /* Девятый экран */
 .ninth-screen {
-    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), 
-                url('https://hightech.fm/wp-content/uploads/2022/07/milky-way-full-of-stars-in-space-2.jpg');
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), 
+                url('https://i.pinimg.com/originals/d2/02/86/d20286174c8c8b16f4004cc2cdbe686e.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -202,7 +214,7 @@ body.scrolled .corner-image {
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-top: 0;
-    background-color: rgba(83, 83, 83, 0.8);
+    background-color: rgba(49, 49, 49, 0.9);
     padding: 20px 40px;
     display: inline-block;
     border-radius: 5px;
