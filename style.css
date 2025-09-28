@@ -114,8 +114,80 @@ body.scrolled .corner-image {
     padding-top: 60px;
 }
 
+/* Четвертый экран */
+.fourth-screen {
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), 
+                url('https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_67d2e702b24a2a070a02a560_67d46161c90dd370d09f8759/scale_1200');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    align-items: flex-start;
+    padding-top: 60px;
+}
+
+/* Пятый экран */
+.fifth-screen {
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), 
+                url('https://fleetphoto.ru/photo/03/77/76/377761.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    align-items: flex-start;
+    padding-top: 60px;
+}
+
+/* Шестой экран */
+.sixth-screen {
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), 
+                url('https://i.postimg.cc/vTDGgxfC/IMG-9584.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    align-items: flex-start;
+    padding-top: 60px;
+}
+
+/* Седьмой экран */
+.seventh-screen {
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), 
+                url('https://cont.ws/uploads/pic/2022/10/Челябинская%20область%20ст.%20Вязовая.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    align-items: flex-start;
+    padding-top: 60px;
+}
+
+/* Восьмой экран */
+.eighth-screen {
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), 
+                url('https://wichitalinemanwasasongionceheard.com/wp-content/uploads/2025/06/nuclear-bomb-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    align-items: flex-start;
+    padding-top: 60px;
+}
+
+/* Девятый экран */
+.ninth-screen {
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), 
+                url('https://hightech.fm/wp-content/uploads/2022/07/milky-way-full-of-stars-in-space-2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    align-items: flex-start;
+    padding-top: 60px;
+}
+
 .second-screen .container,
-.third-screen .container {
+.third-screen .container,
+.fourth-screen .container,
+.fifth-screen .container,
+.sixth-screen .container,
+.seventh-screen .container,
+.eighth-screen .container,
+.ninth-screen .container {
     margin-top: 0;
     padding-top: 20px;
 }
@@ -171,6 +243,26 @@ body.scrolled .corner-image {
     margin-bottom: 0;
 }
 
+/* Блок только с картинкой */
+.image-block {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Стили для встроенных картинок в тексте */
+.image-inline {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.image-inline img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 3px solid #fff;
+}
+
 /* Адаптивность */
 @media (max-width: 768px) {
     .container {
@@ -199,6 +291,10 @@ body.scrolled .corner-image {
         margin-bottom: 15px;
     }
     
+    .image-block {
+        padding: 15px;
+    }
+    
     .text-block p {
         font-size: 1.2rem;
         line-height: 1.6;
@@ -210,9 +306,23 @@ body.scrolled .corner-image {
     }
     
     .second-screen,
-    .third-screen {
+    .third-screen,
+    .fourth-screen,
+    .fifth-screen,
+    .sixth-screen,
+    .seventh-screen,
+    .eighth-screen,
+    .ninth-screen {
         padding-top: 40px;
         background-attachment: scroll;
+    }
+    
+    .image-inline {
+        margin: 15px 0;
+    }
+    
+    .image-inline img {
+        border-width: 2px;
     }
 }
 
@@ -236,13 +346,23 @@ body.scrolled .corner-image {
     }
     
     .second-screen,
-    .third-screen {
+    .third-screen,
+    .fourth-screen,
+    .fifth-screen,
+    .sixth-screen,
+    .seventh-screen,
+    .eighth-screen,
+    .ninth-screen {
         padding-top: 30px;
     }
     
     .text-block {
         padding: 15px 20px;
         margin-bottom: 12px;
+    }
+    
+    .image-block {
+        padding: 12px;
     }
     
     .text-block p {
@@ -253,6 +373,14 @@ body.scrolled .corner-image {
     .section-title {
         margin-bottom: 20px;
         padding: 12px 25px;
+    }
+    
+    .image-inline {
+        margin: 12px 0;
+    }
+    
+    .image-inline img {
+        border-width: 1px;
     }
 }
 
@@ -270,13 +398,23 @@ body.scrolled .corner-image {
     }
     
     .second-screen,
-    .third-screen {
+    .third-screen,
+    .fourth-screen,
+    .fifth-screen,
+    .sixth-screen,
+    .seventh-screen,
+    .eighth-screen,
+    .ninth-screen {
         padding-top: 20px;
     }
     
     .text-block {
         padding: 12px 15px;
         margin-bottom: 10px;
+    }
+    
+    .image-block {
+        padding: 10px;
     }
     
     .text-block p {
